@@ -35,7 +35,6 @@ class Calculator {
         let computation 
         const prev = parseFloat(this.previousOperand)
         const current = parseFloat(this.currentOperand)
-        if(isNaN(prev) && isNaN(current)) return
         switch (this.operation) {
             case '+': 
                 computation = prev + current
@@ -50,7 +49,7 @@ class Calculator {
                 computation = prev / current
                 break
             case '√':
-                computation = Math.sqrt(current)
+                computation = Math.sqrt(current) 
                 break
             default:
                 return
