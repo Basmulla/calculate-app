@@ -24,10 +24,8 @@ body {
 
 .calculator-grid {
   display: grid;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: repeat(5, 90px);
-  grid-template-rows: minmax(130px, auto) repeat(5, 85px);
+  grid-template-columns: repeat(4, 95px);
+  grid-template-rows: minmax(130px, auto) repeat(6, 85px);
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
@@ -57,18 +55,12 @@ body {
   background-color: rgba(255, 255, 255, 0.65);
 }
 
-.calculator-grid > button.operator:hover,
-.calculator-grid > button[data-operation]:hover,
-.calculator-grid > button[data-parenthesis]:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
 .danger {
-  background-color: rgba(255, 120, 120, 0.8) !important;
+  background-color: rgba(255, 120, 120, 0.85) !important;
 }
 
 .equals {
-  background-color: rgba(120, 180, 255, 0.85) !important;
+  background-color: rgba(120, 180, 255, 0.9) !important;
 }
 
 .span-two {
@@ -104,7 +96,7 @@ body {
 }
 
 .hint {
-  max-width: 450px;
+  max-width: 430px;
   margin: 0;
   padding: 12px 16px;
   text-align: center;
@@ -116,8 +108,8 @@ body {
 
 @media (max-width: 520px) {
   .calculator-grid {
-    grid-template-columns: repeat(5, 65px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 65px);
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 65px);
   }
 
   .calculator-grid > button {
