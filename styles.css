@@ -120,3 +120,12 @@ body {
     font-size: 1.8rem;
   }
 }
+
+.empty-button {
+  cursor: default !important;
+  background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.empty-button:hover {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+}
